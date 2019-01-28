@@ -10,7 +10,7 @@ $15.99
 2. Integer
 3. Date
 4. Float
-5. Float/Currency
+5. Function
 
 >Explain when a database would be used. Explain when a text file would be used
 
@@ -89,7 +89,7 @@ A:
 
 SELECT email, signup
 FROM users
-WHERE 'DeAndre Data'
+WHERE name = 'DeAndre Data';
 
 >The user ID for the user with email 'aleesia.algorithm@uw.edu'.
 
@@ -97,7 +97,7 @@ A:
 
 SELECT userid
 FROM users
-WHERE 'aleesia.algorithm@uw.edu'
+WHERE email = 'aleesia.algorithm@uw.edu';
 
 >All the columns for the user ID equal to 4.
 
@@ -105,4 +105,4 @@ A:
 
 SELECT *
 FROM users
-WHERE userid = 4
+WHERE userid = 4;
